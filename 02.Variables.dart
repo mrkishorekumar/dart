@@ -29,6 +29,8 @@ void main() {
   var name = "Alice"; // Inferred as String
   int age = 25; // Explicit type
   final country = "USA"; // Immutable value
+  late int
+      score; //non-nullable variable will be initialized later, allowing you to defer initialization.
   const pi = 3.14; // Compile-time constant
   bool isActive = true; // Boolean value
 
@@ -36,6 +38,8 @@ void main() {
   String? nickname;
   nickname = null; // Allowed because it's nullable
 
+  score = 100;
+  print(score);
   print(name); // Output: Alice
   print(age); // Output: 25
   print(country); // Output: USA
